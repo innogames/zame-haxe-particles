@@ -11,7 +11,7 @@ class TilemapExt extends Tilemap {
 	}
 	#else
 	private override function __hitTest(x:Float, y:Float, shapeFlag:Bool, stack:Array<DisplayObject>, interactiveOnly:Bool, hitObject:DisplayObject,
-			hitTestWhenMouseDisabled:Bool):Bool {
+			hitTestWhenMouseDisabled:Bool = false):Bool {
 		return false;
 	}
 	#end
